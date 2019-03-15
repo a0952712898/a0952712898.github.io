@@ -51,9 +51,17 @@
       padding: 20px;
       width: 85%;
       background-image:url('https://images.pexels.com/photos/850796/pexels-photo-850796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-      min-height: 700px;
       height: auto; /* only for demonstration, should be removed */
+      min-height: 700px;
       font-size: 20px;
+    }
+
+    .gallery {
+      border: 2px solid white;
+      float: left;
+    }
+    .gallery:hover {
+      border: 2px solid gray;
     }
 
     /* Clear floats after the columns */
@@ -76,22 +84,29 @@
 <body>
 
   <div class="header">
-    <b style="font-size: 400%;">自我介紹</b>
+    <b style="font-size: 400%;">生活照</b>
   </div>
 
-<section>
-  <div class="nav">
-    <ul>
-      <li><a href="d.html">自我介紹</a></li>
-      <li><a href="e.html">學號及照片</a></li>
-      <li><a href="f.html">生活照</a></li>
-    </ul>
-  </div>
-  
-  <div class="article">
-    <p>大家好,我是林彥宇,目前是台灣科技大學電機工程學系四年級,興趣打籃球、打程式,對於電腦相關的事情都蠻有熱情的。</p>
-  </div>
-</section>
-
+  <section>
+    <div class="nav">
+      <ul style="list-style-type:circle">
+        <li><a href="d.html">自我介紹</a></li>
+        <li><a href="e.html">學號及照片</a></li>
+        <li><a href="f.html">生活照</a></li>
+      </ul>
+    </div>
+    
+    <div class="article">
+      <div class="gallery">
+        <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t31.0-8/1978346_595304917218598_1329766289_o.jpg?_nc_cat=110&_nc_ht=scontent-hkg3-2.xx&oh=b9a58ab5021dfd21ccddf0b8db49bb8a&oe=5D1F1646" width="300" height="200">
+      </div>
+      <div class="gallery">
+        <img src="https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/18740123_1506756366042061_814562584745298236_n.jpg?_nc_cat=106&_nc_ht=scontent.ftpe8-3.fna&oh=b70e1347d426806cd50e640bcb76f2ab&oe=5D0DB6CA" width="300" height="200">
+      </div>
+      <div class="gallery">
+        <img src="https://scontent.ftpe8-3.fna.fbcdn.net/v/t1.0-9/41765504_10218064377906077_360519786754473984_o.jpg?_nc_cat=107&_nc_ht=scontent.ftpe8-3.fna&oh=92be3724281b8dc83210bc758325ea5e&oe=5D05AF2F" width="300" height="200">
+      </div>
+    </div>
+  </section>
 </body>
 </html>
